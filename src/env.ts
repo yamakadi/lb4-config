@@ -13,7 +13,7 @@ export class Env {
         this.load();
     }
 
-    get(key: string, defaultValue?: string): string {
+    get(key: string, defaultValue?: string): string|undefined {
         return get(process.env, key, defaultValue)
     }
 
@@ -62,7 +62,7 @@ export class Env {
             return {}
         }
 
-        return env.parsed;
+        return env.parsed || {};
     }
 
 
