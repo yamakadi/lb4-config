@@ -7,14 +7,14 @@ import {Env} from "./env";
  */
 export namespace ConfigBindings {
     export const CONFIG = BindingKey.create<Config>(
-        'config',
+        'lb4-config.config',
     );
 
     export const APP_CONFIGURATION = BindingKey.create<Configuration>(
-        'config.configuration',
+        'lb4-config.configuration',
     );
 
     export const ENV = BindingKey.create<Env>(
-        'config.env',
+        'lb4-config.env',
     );
 }

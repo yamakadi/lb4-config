@@ -1,6 +1,6 @@
 {
-  "name": "lb4-config",
-  "version": "0.1.0",
+  "name": "@yamakadi/lb4-config",
+  "version": "0.1.2",
   "description": "A simple config extension for Loopback 4",
   "keywords": [
     "loopback-extension",
@@ -25,8 +25,8 @@
     "tslint": "lb-tslint",
     "tslint:fix": "npm run tslint -- --fix",
     "pretest": "npm run clean && npm run build",
-    "test": "lb-mocha --allow-console-logs \"dist/test\"",
-    "posttest": "npm run lint",
+    "test": "",
+    "posttest": "",
     "test:dev": "lb-mocha --allow-console-logs dist/test/**/*.js && npm run posttest",
     "prepublishOnly": "npm run test"
   },
